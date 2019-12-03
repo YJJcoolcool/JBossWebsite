@@ -3,11 +3,11 @@
 <!--Tasks-->
 <!--Favicon and Title                              OK-->
 <!--Has at least three CSS rules                   OK-->
-<!--Provides links to secondary or external pages  NO-->
+<!--Provides links to secondary or external pages  OK-->
 <!--Has at least 3 meta tags                       OK-->
 <!--Explicitly declares the character encoding     OK-->
-<!--Has at least 1 image                           NO-->
-<!--Has at least 1 table and 1 list                NO-->
+<!--Has at least 1 image                           OK-->
+<!--Has at least 1 table and 1 list                OK-->
 <!--Is accompanied by a minimal robots.txt that
     blocks access to a dummy page                  NO-->
 
@@ -27,17 +27,116 @@
         <!--Styling for the webpage-->
         <style>
             *{
-                margin: 0;
+                margin: 0 auto;
                 font-family: Arial;
                 color: black;
             }
+
+            body, html {
+            height: 100%;
+            margin: 0;
+            }
+
+            .banner {
+            /* The image used */
+            background-image: url("https://github.com/YJJcoolcool/JBossWebsite/blob/master/Nice.png?raw=true");
+
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+
+            .banner-title{
+                position:absolute;
+                color: white;
+                font-size: 40px;
+                left:5%;
+                right: 35%;
+                top:40%;
+            }
+
+            .content{
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            table,td,th{
+                border:1px solid black;
+                padding: 5px;
+            }
+
+            a{
+                color: blue;
+            }
+
         </style>
     </head>
     
 
 
     <body>
-        <h1>Exploring Creativity in Minecraft</h1>
-        <img src="/Nice.png">
+        <div class="banner"></div>
+        <h1 class="banner-title">Exploring Creativity in Minecraft</h1>
+        
+        <br>
+
+        <div class="content">
+            <h1>What is Minecraft?</h1>
+            <p><a href="https://minecraft.net">Minecraft</a> is a popular sandbox game which allows users to build and create their own works of art. It offers two gamemodes, Survival Mode and Creative mode.</p>
+            <br>
+            <h3>The gamemodes explained</h3>
+            <p><i>Survival mode</i> allows players to interact with a generated world where players gather resources and survive.</p>
+            <p><i>Creative mode</i> lets players have the freedom to do whatever they want. Most of the time, players use this for creating their incredible builds, or test out new ideas.</p>
+            
+
+            <br>
+
+
+            <h1>Why choose Minecraft?</h1>
+            <p>Minecraft is a game which is almost limitless in its possibilities.</p>
+            <br>
+            <p>Some of the things people like to use Minecraft for include:</p>
+            <ul>
+                <li>Building structures from real life (e.g. Eiffel Tower)</li>
+                <li>Making contraptions (e.g. Automatic Door)</li>
+                <li>Making art (e.g. Pixel Art)</li>
+            </ul>
+            <h4>See my <a href="https://yjjcoolcool.github.io/JBossWebsite/showcase">showcase</a> of some beautiful builds made entirely in Minecraft!</h4>
+            
+
+            <br>
+
+
+            <h1>Taking Minecraft to the next level</h1>
+            <p>One way in which people have gone further in their adventure is by creating Minecraft Servers.</p>
+            <p>Below are some servers which focus on City Building in Minecraft.</p>
+            <h3>Some Minecraft City Servers</h3>
+            <table>
+                <tr>
+                    <th>Server Name</th>
+                    <th>Server address</th>
+                    <th>Server website</th>
+                </tr>
+                <tr>
+                    <td>GeoMC</td>
+                    <td>play.geomc.org</td>
+                    <td><a href="http://www.geomc.org">geomc.org</a></td>
+                </tr>
+                <tr>
+                    <td>Wolvhaven</td>
+                    <td>play.wolvhaven.net</td>
+                    <td><a href="https://wolvhaven.net">wolvhaven.net</a></td>
+                </tr>
+                <tr>
+                    <td>YJJ City</td>
+                    <td>yjjcity.ddns.net</td>
+                    <td>NIL</td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
