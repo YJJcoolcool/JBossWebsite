@@ -22,6 +22,27 @@
             height: 100%;
             margin: 0;
             }
+            .navigation-bar{
+                position: absolute;
+                top:0%;
+                height: 35px;
+                width: 100%;
+                color: white;
+                padding: 5px;
+                background-color: black;
+            }
+            .navigation-bar a{
+                color: white;
+                font-size: 30px;
+                text-decoration: none;
+                font-weight: bold;
+                margin-left: 10px;
+                margin-right: 10px;
+                transition: color 0.5s;
+            }
+            .navigation-bar a:hover{
+                color:yellow;
+            }
 
             img{
                 height:30%;
@@ -31,7 +52,14 @@
     </head>
 
     <body>
-        <p><a href="https://yjjcoolcool.github.io/JBossWebsite/">Back</a></p>
+        <div class="navigation-bar">
+            <a class="home" href="https://yjjcoolcool.github.io/JBossWebsite/">Home</a>
+            <a class="showcase" href="https://yjjcoolcool.github.io/JBossWebsite/showcase" style="color:yellow;">Showcase</a>
+            <a class="about" href="https://yjjcoolcool.github.io/JBossWebsite/about">About</a>
+        </div>
+        <br>
+        <br>
+        <br>
         <h1>My showcase of the most incredible Minecraft builds</h1>
         <img src="https://static.planetminecraft.com/files/resource_media/screenshot/1203/mostzd_1259478.jpg">
         <p><i>The Tower Bridge of London</i></p>
